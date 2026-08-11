@@ -3,7 +3,7 @@
 A Wordle solver and player built around an information-theory (entropy)
 guessing strategy, with both a Tkinter GUI and a command-line interface.
 
-![Wordle Solver screenshot](assets/screenshot.png)
+<img width="905" height="796" alt="image" src="https://github.com/user-attachments/assets/dcc53a35-7fbe-4cf9-a644-e0cbb103b809" />
 
 ## How it works
 
