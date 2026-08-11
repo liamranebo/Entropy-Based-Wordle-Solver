@@ -1,0 +1,23 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pytest:
+    # windows-latest so the tkinter GUI module (wordle_gui.py) imports
+    # cleanly, matching the environment this project is developed in.
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt -r requirements-test.txt
+
+      - name: Run tests
+        run: pytest -n auto

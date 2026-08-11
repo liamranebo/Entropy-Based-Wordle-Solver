@@ -1,0 +1,17 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Test/tooling caches
+.pytest_cache/
+
+# IDE
+.idea/
+.claude/
+
+# Jupyter
+.ipynb_checkpoints/
